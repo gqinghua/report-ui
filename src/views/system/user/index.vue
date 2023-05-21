@@ -599,14 +599,6 @@ function resetForm() {
 	userFormRef.value.clearValidate();
 
 	formData.id = undefined;
-	// formData.deptId = undefined;
-	// formData.gender = undefined;
-	// formData.phone = undefined;
-	// formData.realName = undefined;
-	// formData.roleCodeList = undefined;
-	// formData.enableFlag = undefined;
-	// formData.loginName = undefined;
-
 	formData.enableFlag = 1;
 }
 
