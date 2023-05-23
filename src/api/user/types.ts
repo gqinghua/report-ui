@@ -102,7 +102,7 @@ export interface UserForm {
   /**
    * 角色ID集合
    */
-	roleCodeList?: string[];
+	roleIds?: string[];
   /**
    * 用户状态(1:正常;0:禁用)
    */

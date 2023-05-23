@@ -67,7 +67,7 @@ export function updateRoleMenus(
  */
 export function getRoleForm(id: number): AxiosPromise<RoleForm> {
   return request({
-    url: '/api/v1/roles/' + id + '/form',
+    url: '/SysRole/' + id + '/form',
     method: 'get'
   });
 }
@@ -79,7 +79,7 @@ export function getRoleForm(id: number): AxiosPromise<RoleForm> {
  */
 export function addRole(data: RoleForm) {
   return request({
-    url: '/api/v1/roles',
+    url: '/SysRole/roles',
     method: 'post',
     data: data
   });
@@ -93,7 +93,7 @@ export function addRole(data: RoleForm) {
  */
 export function updateRole(id: number, data: RoleForm) {
   return request({
-    url: '/api/v1/roles/' + id,
+    url: '/SysRole/' + id,
     method: 'put',
     data: data
   });
@@ -106,7 +106,7 @@ export function updateRole(id: number, data: RoleForm) {
  */
 export function deleteRoles(ids: string) {
   return request({
-    url: '/api/v1/roles/' + ids,
+    url: '/SysRole/' + ids,
     method: 'delete'
   });
 }

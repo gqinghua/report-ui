@@ -12,7 +12,7 @@ export interface RolePageVO {
   /**
    * 角色编码
    */
-  code?: string;
+	roleCode?: string;
 
   /**
    * 角色ID
@@ -21,7 +21,7 @@ export interface RolePageVO {
   /**
    * 角色名称
    */
-  name?: string;
+	roleName?: string;
   /**
    * 排序
    */
@@ -57,7 +57,7 @@ export interface RoleForm {
   /**
    * 角色编码
    */
-  code: string;
+	roleCode: string;
   /**
    * 数据权限
    */
@@ -66,7 +66,7 @@ export interface RoleForm {
   /**
    * 角色名称
    */
-  name: string;
+	roleName: string;
   /**
    * 排序
    */

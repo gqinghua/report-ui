@@ -274,8 +274,8 @@
 					</el-select>
 				</el-form-item>
 
-				<el-form-item label="角色" prop="roleCodeList">
-					<el-select v-model="formData.roleCodeList" multiple placeholder="请选择">
+				<el-form-item label="角色" prop="roleIds">
+					<el-select v-model="formData.roleIds" multiple placeholder="请选择">
 						<el-option
 							v-for="item in roleList"
 							:key="item.value"
@@ -422,7 +422,7 @@ const rules = reactive({
 	loginName: [{ required: true, message: "用户名不能为空", trigger: "blur" }],
 	realName: [{ required: true, message: "用户昵称不能为空", trigger: "blur" }],
 	deptId: [{ required: true, message: "所属部门不能为空", trigger: "blur" }],
-	roleCodeList: [{ required: true, message: "用户角色不能为空", trigger: "blur" }],
+	roleIds: [{ required: true, message: "用户角色不能为空", trigger: "blur" }],
 	email: [
 		{
 			pattern: /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/,

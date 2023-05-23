@@ -107,11 +107,11 @@
 				label-width="100px"
 			>
 				<el-form-item label="角色名称" prop="name">
-					<el-input v-model="formData.name" placeholder="请输入角色名称" />
+					<el-input v-model="formData.roleName" placeholder="请输入角色名称" />
 				</el-form-item>
 
 				<el-form-item label="角色编码" prop="code">
-					<el-input v-model="formData.code" placeholder="请输入角色编码" />
+					<el-input v-model="formData.roleCode" placeholder="请输入角色编码" />
 				</el-form-item>
 
 				<el-form-item label="数据权限" prop="dataScope">
@@ -221,13 +221,13 @@ const dialog = reactive<DialogOption>({
 const formData = reactive<RoleForm>({
   sort: 1,
   status: 1,
-  code: '',
-  name: ''
+	roleCode: '',
+	roleName: ''
 });
 
 const rules = reactive({
-  name: [{ required: true, message: '请输入角色名称', trigger: 'blur' }],
-  code: [{ required: true, message: '请输入角色编码', trigger: 'blur' }],
+	roleName: [{ required: true, message: '请输入角色名称', trigger: 'blur' }],
+	roleCode: [{ required: true, message: '请输入角色编码', trigger: 'blur' }],
   dataScope: [{ required: true, message: '请选择数据权限', trigger: 'blur' }],
   status: [{ required: true, message: '请选择状态', trigger: 'blur' }]
 });
