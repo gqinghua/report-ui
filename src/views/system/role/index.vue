@@ -106,11 +106,11 @@
 				:rules="rules"
 				label-width="100px"
 			>
-				<el-form-item label="角色名称" prop="name">
+				<el-form-item label="角色名称" prop="roleName">
 					<el-input v-model="formData.roleName" placeholder="请输入角色名称" />
 				</el-form-item>
 
-				<el-form-item label="角色编码" prop="code">
+				<el-form-item label="角色编码" prop="roleCode">
 					<el-input v-model="formData.roleCode" placeholder="请输入角色编码" />
 				</el-form-item>
 
@@ -220,7 +220,7 @@ const dialog = reactive<DialogOption>({
 
 const formData = reactive<RoleForm>({
   sort: 1,
-  status: 1,
+	enable_flag: 1,
 	roleCode: '',
 	roleName: ''
 });

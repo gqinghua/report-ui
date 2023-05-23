@@ -79,7 +79,7 @@ export function getRoleForm(id: number): AxiosPromise<RoleForm> {
  */
 export function addRole(data: RoleForm) {
   return request({
-    url: '/SysRole/roles',
+    url: '/SysRole',
     method: 'post',
     data: data
   });

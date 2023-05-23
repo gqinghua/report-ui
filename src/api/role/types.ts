@@ -22,14 +22,11 @@ export interface RolePageVO {
    * 角色名称
    */
 	roleName?: string;
-  /**
-   * 排序
-   */
-  sort?: number;
+
   /**
    * 角色状态
    */
-  status?: number;
+	enableFlag?: number;
   /**
    * 创建时间
    */
@@ -67,12 +64,9 @@ export interface RoleForm {
    * 角色名称
    */
 	roleName: string;
-  /**
-   * 排序
-   */
-  sort?: number;
+
   /**
    * 角色状态(1-正常；0-停用)
    */
-  status?: number;
+	enableFlag?: number;
 }
